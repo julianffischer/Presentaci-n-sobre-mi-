@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #3b3b3b; }
+
+.header {
+  background: linear-gradient(#242424 75%, #3b3b3b); }
+  .header__contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    box-sizing: content-box;
+    margin: auto;
+    max-width: 1400px; }
+    .header__contenedor-bienvenida {
+      color: #eeeeee;
+      font-family: serif; }
+  .header__img {
+    cursor: pointer;
+    width: 200px;
+    margin: 0px 30px;
+    border-radius: 100px;
+    transition: all 0.4s; }
+    .header__img:hover {
+      width: 300px; }
+
+.carta__presentacion {
+  margin: auto;
+  max-width: 1400px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr); }
+
+.carta__presentacion-contenido {
+  color: #eeeeee;
+  width: 50%;
+  margin: 30px;
+  padding: 10%;
+  border: 1px solid #4ace46;
+  transition: all 0.4s; }
+  .carta__presentacion-contenido p {
+    text-align: center; }
+  .carta__presentacion-contenido:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.5); }
+
+.contenido__sobre__mi {
+  background-color: #242424;
+  padding: 90px; }
+  .contenido__sobre__mi-container {
+    margin: auto;
+    max-width: 1300px;
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    gap: 80px;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #242424; }
+  .contenido__sobre__mi-paginas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; }
+    .contenido__sobre__mi-paginas a {
+      color: white;
+      text-decoration: none;
+      transition: all 0.4s; }
+      .contenido__sobre__mi-paginas a:hover {
+        color: #4ace46;
+        border-bottom: 1px solid #4ace46; }
+  .contenido__sobre__mi p {
+    margin: 20px; }
+
+.contacto {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+  max-width: 1400px;
+  grid-template-columns: repeat(2, 1fr);
+  color: white;
+  padding: 90px; }
+  .contacto-redes {
+    border-top: 1.5px solid #4ace46;
+    margin-top: 10px; }
+    .contacto-redes h3 {
+      margin-top: 10px; }
+    .contacto-redes-whatsapp {
+      transition: all 0.3s;
+      text-decoration: none; }
+      .contacto-redes-whatsapp:hover {
+        color: #74f170; }
+    .contacto-redes-instagram {
+      transition: all 0.3s;
+      text-decoration: none; }
+      .contacto-redes-instagram:hover {
+        color: #d82a69; }
+    .contacto-redes-twitter {
+      transition: all 0.3s;
+      text-decoration: none; }
+      .contacto-redes-twitter:hover {
+        color: #71f6ff; }
+    .contacto-redes-linkedin {
+      transition: all 0.3s;
+      text-decoration: none; }
+      .contacto-redes-linkedin:hover {
+        color: #768fff; }
+  .contacto-datos {
+    text-align: center;
+    list-style: none; }
+    .contacto-datos li {
+      margin-top: 10px;
+      list-style: none; }
+    .contacto-datos a {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      color: white; }

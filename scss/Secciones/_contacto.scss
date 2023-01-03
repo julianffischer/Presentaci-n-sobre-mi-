@@ -1,0 +1,68 @@
+.contacto{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    max-width: 1400px;
+    grid-template-columns: repeat(2, 1fr);
+    color: rgb(255, 255, 255);
+    padding: 90px;
+
+    &-redes{
+        border-top: 1.5px solid rgb(74, 206, 70);
+        margin-top: 10px;
+
+        & h3{
+            margin-top: 10px;
+        }
+
+        &-whatsapp{
+            transition: all 0.3s;
+            text-decoration: none;
+
+            &:hover{
+                color:  rgb(116, 241, 112) ;
+            }
+        }
+        &-instagram{
+            transition: all 0.3s;
+            text-decoration: none;
+
+            &:hover{
+                color: rgb(216,42,105);
+            }
+        }
+        &-twitter{
+            transition: all 0.3s;
+            text-decoration: none;
+
+            &:hover{
+                color: rgb(113, 246, 255);
+            }
+        }
+        &-linkedin{
+            transition: all 0.3s;
+            text-decoration: none;
+
+            &:hover{
+                color: rgb(118, 143, 255);
+            }
+        }
+    }
+
+    &-datos{
+        text-align: center;
+        list-style: none;
+        
+        & li{
+            margin-top: 10px;
+            list-style: none;
+        }
+        & a{
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            color: white;
+        }
+    }
+}
