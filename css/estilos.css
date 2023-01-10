@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
   background-color: #3b3b3b; }
@@ -25,7 +26,7 @@ body {
     border-radius: 100px;
     transition: all 0.4s; }
     .header__img:hover {
-      width: 300px; }
+      width: 250px; }
 
 .carta__presentacion {
   margin: auto;
@@ -37,8 +38,9 @@ body {
 .carta__presentacion-contenido {
   color: #eeeeee;
   width: 50%;
-  margin: 30px;
-  padding: 10%;
+  margin: 20px;
+  padding: 20px;
+  box-sizing: content-box;
   border: 1px solid #4ace46;
   transition: all 0.4s; }
   .carta__presentacion-contenido p {
@@ -49,7 +51,8 @@ body {
 
 .contenido__sobre__mi {
   background-color: #242424;
-  padding: 90px; }
+  padding: 50px;
+  box-sizing: content-box; }
   .contenido__sobre__mi-container {
     margin: auto;
     max-width: 1300px;
@@ -84,7 +87,8 @@ body {
   max-width: 1400px;
   grid-template-columns: repeat(2, 1fr);
   color: white;
-  padding: 90px; }
+  padding: 0px;
+  box-sizing: content-box; }
   .contacto-redes {
     border-top: 1.5px solid #4ace46;
     margin-top: 10px; }
@@ -121,3 +125,13 @@ body {
       flex-direction: column;
       margin-top: 10px;
       color: white; }
+
+@media (min-width: 300px) {
+  .header__contenedor {
+    flex-direction: column; }
+  .contacto {
+    grid-template-columns: repeat(1, 1fr); }
+  .carta__presentacion {
+    grid-template-columns: repeat(1, 1fr); }
+  .contenido__sobre__mi-container {
+    grid-template-columns: repeat(1, 1fr); } }

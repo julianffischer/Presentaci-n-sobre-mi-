@@ -1,0 +1,24 @@
+@media (min-width: 300px) {
+    // header
+    .header{
+        &__contenedor{
+            flex-direction: column;
+        }
+    }
+    
+    // contacto 
+    .contacto{       
+        grid-template-columns: repeat(1, 1fr);       
+    }
+    // carta de presentación
+    .carta__presentacion{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    // contenido sobre mí
+    .contenido__sobre__mi{
+        &-container{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+}
