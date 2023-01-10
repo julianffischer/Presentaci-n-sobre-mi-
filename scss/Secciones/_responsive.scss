@@ -1,4 +1,4 @@
-@media (min-width: 300px) {
+@media (min-width: 200px) {
     // header
     .header{
         &__contenedor{
@@ -22,3 +22,21 @@
     }
 
 }
+
+@media (min-width: 700px) {
+    // header
+    .header{
+        &__contenedor{
+            flex-direction: row;
+        }
+    }
+    // carta de presentación
+    .carta__presentacion{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contacto{       
+        grid-template-columns: repeat(2, 1fr);       
+    }
+}
+
